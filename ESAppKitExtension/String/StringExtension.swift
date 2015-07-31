@@ -10,11 +10,21 @@ import AppKit
 
 extension String {
 	
-	public func sizeWithFont(font:NSFont?, maxWidth: CGFloat? = nil) -> NSSize {
+	public func sizeWithFont(font:NSFont?, lineBreakMode:NSLineBreakMode, maxWidth: CGFloat? = nil) -> NSSize {
+		
+		let style = NSMutableParagraphStyle()
+		
+		style.lineBreakMode = lineBreakMode
+		
+		return self.sizeWithFont(font, style: style, maxWidth: maxWidth)
+	}
+	
+	public func sizeWithFont(font:NSFont?, style:NSMutableParagraphStyle?, maxWidth: CGFloat? = nil) -> NSSize {
 		
 		var attributes = [String:AnyObject!]()
 		
 		font.map { attributes[NSFontAttributeName] = $0 }
+		style.map { attributes[NSParagraphStyleAttributeName] = $0 }
 		
 		if let width = maxWidth {
 			
@@ -28,3 +38,4 @@ extension String {
 		}
 	}
 }
+
