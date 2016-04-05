@@ -23,8 +23,8 @@ extension String {
 		
 		var attributes = [String:AnyObject!]()
 		
-		font.map { attributes[NSFontAttributeName] = $0 }
-		style.map { attributes[NSParagraphStyleAttributeName] = $0 }
+		_ = font.map { attributes[NSFontAttributeName] = $0 }
+		_ = style.map { attributes[NSParagraphStyleAttributeName] = $0 }
 		
 		if let width = maxWidth {
 			

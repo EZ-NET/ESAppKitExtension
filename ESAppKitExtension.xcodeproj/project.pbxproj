@@ -31,6 +31,8 @@
 		B12B24AA1B6BB77400B284D7 /* ESAppKitExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESAppKitExtensionTests.swift; sourceTree = "<group>"; };
 		B12B24AC1B6BB77400B284D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B12B24B61B6BB7A600B284D7 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		B1A641511CB37B14008FD8B2 /* ESAppKitExtension.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ESAppKitExtension.podspec; sourceTree = "<group>"; };
+		B1A641521CB37B1F008FD8B2 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,8 @@
 		B12B24911B6BB77400B284D7 = {
 			isa = PBXGroup;
 			children = (
+				B1A641511CB37B14008FD8B2 /* ESAppKitExtension.podspec */,
+				B1A641521CB37B1F008FD8B2 /* LICENSE */,
 				B12B249D1B6BB77400B284D7 /* ESAppKitExtension */,
 				B12B24A91B6BB77400B284D7 /* ESAppKitExtensionTests */,
 				B12B249C1B6BB77400B284D7 /* Products */,
@@ -392,6 +396,7 @@
 				B12B24B11B6BB77400B284D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B12B24B21B6BB77400B284D7 /* Build configuration list for PBXNativeTarget "ESAppKitExtensionTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +405,7 @@
 				B12B24B41B6BB77400B284D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
